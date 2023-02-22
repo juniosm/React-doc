@@ -16,4 +16,3 @@ const App = () => {
 
 export default App;
 
-// Otimize o código do slide anterior
