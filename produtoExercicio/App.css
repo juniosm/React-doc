@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.container {
+  max-width: 900px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  background-color: #edeced;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 16px 32px;
+  margin-right: 2rem;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #d8d7d8;
+}
+
+.listaProduto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.listaProduto li {
+  max-width: 250px;
+}
+
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+}
+
+.gridProduto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.textProduto .preco {
+  background-color: #87f957;
+  padding: 8px 8px;
+  width: max-content;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.animeLeft {
+  transform: translateX(-30px);
+  opacity: 0;
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
